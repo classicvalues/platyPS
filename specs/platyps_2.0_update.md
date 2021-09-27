@@ -87,6 +87,11 @@ The following sections outline schema changes for the Help file.
 | Notes              | H2    | N         | 1     | Mandatory for schema but not rendered by OPS if empty                                                                                                                                                                                              |
 | Related links      | H3    | Y         | 1     | - Link list should use bullets<br>- PlatyPS needs to support bullets<br>- Should support Text (prose), not just links                                                                                                                              |
 
+When the markdown is converted to Yaml, every heading in this table should be represented in the
+YAML schema. The contents under each heading should be included with as a member of the heading
+object in the YAML. Review the contents of the publishing templates to see how the YAML data is
+consumed by OPS.
+
 #### Structure of the YAML frontmatter
 
 The YAML frontmatter for cmdlet help should contain the following keys:
